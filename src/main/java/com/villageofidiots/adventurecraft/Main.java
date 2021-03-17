@@ -1,8 +1,12 @@
 package com.villageofidiots.adventurecraft;
 
-import net.minecraftforge.fml.common.*;
+import net.minecraftforge.fml.common.Mod;
 
-@Mod("AdventureCraft")
+@Mod("skillcraft")
 public class Main {
 
+	// Constructor
+	public Main() {
+		GlobalConstants.LOGGER.debug("Hello!");
+	}
 }
