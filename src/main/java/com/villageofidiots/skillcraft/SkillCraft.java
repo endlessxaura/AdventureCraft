@@ -9,7 +9,8 @@ import net.minecraftforge.fml.common.Mod;
 public class SkillCraft {
 	public static final String MODID = "skillcraft";
 	public static final Logger LOGGER = LogManager.getLogger();
-
+	public Skills[] skills;
+	
 	// Constructor
 	public SkillCraft() {
 		LOGGER.debug("Hello!");
