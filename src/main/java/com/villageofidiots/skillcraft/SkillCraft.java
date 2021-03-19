@@ -11,7 +11,5 @@ public class SkillCraft {
 	public static final Logger LOGGER = LogManager.getLogger();
 
 	// Constructor
-	public SkillCraft() {
-		LOGGER.debug("Hello!");
-	}
+	public SkillCraft() {}
 }
