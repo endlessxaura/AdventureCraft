@@ -21,7 +21,7 @@ public class Talent implements ITalent, INBTSerializable<StringNBT> {
 	}
 	
 	public void onAttack() {
-		// TODO
+		// TODO: perform something when the player hits an enemy
 	}
 
 	// ICapabilitySerializable

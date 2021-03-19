@@ -28,7 +28,7 @@ public class Talents implements ITalents {
 	@Override
 	public <ITalents> LazyOptional<ITalents> getCapability(Capability<ITalents> cap, Direction side) {
 		// PRE: the capability itself and the side we're pulling from
-		// POST: gets an instance o
+		// POST: gets an instance of the talents capability
 		return cap == TalentsHandler.TALENT_HANDLER_CAPABILITY ? talentsCapability.cast() : LazyOptional.empty();
 	}
 

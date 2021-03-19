@@ -14,14 +14,14 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 public class TalentsHandler {
 	
-	// This adds the capability to the system using injector provided by Forge
-	@CapabilityInject(ITalents.class)
+	// Properties
+	@CapabilityInject(ITalents.class)	// This injects a globally exposed capability into this variable
     public static Capability<ITalents> TALENT_HANDLER_CAPABILITY = null;
 	
-	// This event function attaches the capability to the player
 	@SubscribeEvent
 	public static void attachCapability(AttachCapabilitiesEvent<Entity> event)
 	{
+		// POST: subscribes to the attach capability event. This attaches the capability to the player. (Supposedly: untested)
 		if (event.getObject() instanceof PlayerEntity) {
 			event.addCapability(new ResourceLocation(SkillCraft.MODID, "Talents"), new Talents());
 		}
